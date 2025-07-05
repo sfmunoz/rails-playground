@@ -10,6 +10,9 @@
 
 - [Ruby on Rails](https://rubyonrails.org/)
 - [https://github.com/rails/rails](https://github.com/rails/rails)
+- [https://rubyonrails.org/](https://rubyonrails.org/) → [https://d2biiyjlsh52uh.cloudfront.net/rails/rails-8-demo.mp4](https://d2biiyjlsh52uh.cloudfront.net/rails/rails-8-demo.mp4)
+  - This is the video I used as a reference to create this repository
+  - [Kamal](https://kamal-deploy.org/) and deployment related stuff are not reflected in the evolution of the project
 
 ## Quick start
 
