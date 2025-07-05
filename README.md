@@ -19,6 +19,13 @@ $ rails new rails-playground
 $ cd rails-playground
 $ ./bin/rails server
 ```
+**./bin/dev** can be used instead of **./bin/rails server**:
+```
+$ cat bin/dev
+#!/usr/bin/env ruby
+exec "./bin/rails", "server", *ARGV
+```
+
 > At this point you can go to [http://localhost:3000](http://localhost:3000) in your browser
 
 Using information to the beginnig of [https://rubyonrails.org/](https://rubyonrails.org/) → [https://d2biiyjlsh52uh.cloudfront.net/rails/rails-8-demo.mp4](https://d2biiyjlsh52uh.cloudfront.net/rails/rails-8-demo.mp4) scaffold **post** with **title** and **body**:
