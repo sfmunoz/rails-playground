@@ -3,6 +3,7 @@
 - [References](#references)
 - [Quick start](#quick-start)
 - [Versions](#versions)
+- [Console](#console)
 - [Things to cover](#things-to-cover)
 
 ## References
@@ -43,6 +44,23 @@ From [http://localhost:3000/](http://localhost:3000/) when **./bin/rails server*
 - **Rack version**: 3.1.16
 - **Ruby version**: ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu] \
   I'm using **Linux Mint 22.1**
+
+## Console
+
+Simple usage example showing and updating the first post:
+```
+$ ./bin/rails console
+Loading development environment (Rails 8.0.2)
+rails-playground(dev)> Post.first
+  Post Load (0.1ms)  SELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT 1 /*application='RailsPlayground'*/
+=> #<Post:0x00007e098f4daa78 id: 1, title: "p1", body: "p1-body", created_at: "2025-07-05 10:18:35.188633000 +0000", updated_at: "2025-07-05 10:18:35.188633000 +0000">
+rails-playground(dev)> Post.first.update! title: "p1 (set by CLI)"
+  Post Load (0.3ms)  SELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT 1 /*application='RailsPlayground'*/
+  TRANSACTION (0.2ms)  BEGIN immediate TRANSACTION /*application='RailsPlayground'*/
+  Post Update (0.9ms)  UPDATE "posts" SET "title" = 'p1 (set by CLI)', "updated_at" = '2025-07-05 10:27:49.768472' WHERE "posts"."id" = 1 /*application='RailsPlayground'*/
+  TRANSACTION (3.5ms)  COMMIT TRANSACTION /*application='RailsPlayground'*/
+=> true
+```
 
 ## Things to cover
 
