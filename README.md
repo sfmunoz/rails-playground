@@ -2,6 +2,7 @@
 
 - [References](#references)
 - [Quick start](#quick-start)
+- [Versions](#versions)
 - [Things to cover](#things-to-cover)
 
 ## References
@@ -26,6 +27,15 @@ $ rails generate scaffold post title:string body:text
 $ rails db:migrate
 ```
 > At this point you can go to [http://localhost:3000/posts](http://localhost:3000/posts) in your browser and start using the app.
+
+## Versions
+
+From [http://localhost:3000/](http://localhost:3000/) when **./bin/rails server** is running:
+
+- **Rails version**: 8.0.2
+- **Rack version**: 3.1.16
+- **Ruby version**: ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu] \
+  I'm using **Linux Mint 22.1**
 
 ## Things to cover
 
